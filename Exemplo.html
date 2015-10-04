@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>{{{titulo}}}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    </head>
+    <body>
+        <h1><b>Pessoas</b></h1>
+@@@
+for pessoa in CXXII_XML.raiz().findall('pessoa'):
+@@@
+        <p><b>Nome:</b> {{{pessoa.find('nome').text}}}</p>
+        <p><b>Endereço:</b> {{{pessoa.find('endereco').text}}}</p>
+        <hr>
+@@@
+@@@
+    </body>
+</html>

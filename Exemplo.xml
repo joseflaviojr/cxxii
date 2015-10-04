@@ -1,0 +1,10 @@
+<pessoas>
+    <pessoa>
+        <nome>Maria</nome>
+        <endereco>Rua M</endereco>
+    </pessoa>
+    <pessoa>
+        <nome>José</nome>
+        <endereco>Rua J</endereco>
+    </pessoa>
+</pessoas>
