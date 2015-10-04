@@ -4,17 +4,17 @@ Gerador de arquivos a partir de XML
 
 File generator based on XML
 
-"Não vos conformeis com este mundo,
-mas transformai-vos pela renovação do vosso espírito,
-para que possais discernir qual é a vontade de Deus,
-o que é bom, o que lhe agrada e o que é perfeito."
-(Bíblia Sagrada, Romanos 12:2)
+    "Não vos conformeis com este mundo,
+    mas transformai-vos pela renovação do vosso espírito,
+    para que possais discernir qual é a vontade de Deus,
+    o que é bom, o que lhe agrada e o que é perfeito."
+    (Bíblia Sagrada, Romanos 12:2)
 
-"Do not conform yourselves to this age
-but be transformed by the renewal of your mind,
-that you may discern what is the will of God,
-what is good and pleasing and perfect."
-(Holy Bible, Romans 12:2)
+    "Do not conform yourselves to this age
+    but be transformed by the renewal of your mind,
+    that you may discern what is the will of God,
+    what is good and pleasing and perfect."
+    (Holy Bible, Romans 12:2)
 
 ## Exemplo.xml (Example)
 
