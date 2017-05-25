@@ -1,65 +1,67 @@
-# Geral
-.DS_Store
-.DS_Store?
-.Spotlight-V100
+
+# .gitignore 2017-05-25
+
+# Sistema Operacional
+.DS_Store*
+.Spotlight*
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-
-# C extensions
 *.so
+*.dylib
+*.dll
+*.lai
+*.la
+*.a
+*.lib
+*.exe
+*.out
+*.app
 
-# Distribution / packaging
-.Python
-env/
+# Geral
+rascunho/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Gradle
+.gradle/
 build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*,cover
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
+# Maven
 target/
+test-output/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# IntelliJ IDEA
+*.iml
+*.ipr
+*.iws
+out/
+
+# SASS
+.sass-cache/
+*.css.map
+
+# C/C++
+*.slo
+*.lo
+*.o
+*.obj
+*.gch
+*.pch
+
+# Fortran
+*.mod
+
+# Logs
+*.log
+hs_err_pid*
