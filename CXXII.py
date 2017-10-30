@@ -438,8 +438,8 @@ try:
         exec( 'argumento_' + argumento[0] + '=\'' + valor + '\'' )
 
     if argumento_g is None or argumento_a is None:
-        print('\n    CXXII - Gerador de arquivos a partir de XML\n')
-        print('Uso: cxxii -g GERADOR [-f] [-t] [-d DESTINO] [-e EXTENSAO] -a ARQUIVOS')
+        print('\nCXXII 1.0-A1 : Gerador de arquivos a partir de XML\n')
+        print('cxxii -g GERADOR [-f] [-t] [-d DESTINO] [-e EXTENSAO] -a ARQUIVOS\n')
         print('Argumentos:')
         print('  -g   URL ou endereço local do gerador a utilizar: .py ou .zip')
         print('       Nome sem extensão = ' + CXXII_Repositorio + 'Nome.zip')
@@ -447,7 +447,7 @@ try:
         print('  -t   Imprimir detalhes do erro que possa ocorrer')
         print('  -d   Destino dos arquivos gerados')
         print('  -e   Extensão padrão dos arquivos de entrada: xml')
-        print('  -a   Arquivos XML de entrada ou diretórios que os contenham')
+        print('  -a   Arquivos XML de entrada ou diretórios que os contenham\n')
         sys.exit(1)
 
 #----------------------------------------------------------------------------
