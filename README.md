@@ -78,7 +78,8 @@ sudo rm -rf /usr/local/cxxii-1.0-A1
 
 ## Modo de Uso / Mode of Use
 
-    Uso: cxxii -g GERADOR [-f] [-t] [-d DESTINO] [-e EXTENSAO] -a ARQUIVOS
+    cxxii -g GERADOR [-f] [-t] [-d DESTINO] [-e EXTENSAO] -a ARQUIVOS
+    
     Argumentos:
       -g   URL ou endereço local do gerador a utilizar: .py ou .zip
            Nome sem extensão = http://www.joseflavio.com/cxxii/Nome.zip
