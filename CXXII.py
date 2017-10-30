@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 #----------------------------------------------------------------------------
 # 
 # Copyright (C) 2015 José Flávio de Souza Dias Júnior
@@ -437,7 +439,7 @@ try:
 
     if argumento_g is None or argumento_a is None:
         print('\n    CXXII - Gerador de arquivos a partir de XML\n')
-        print('Uso: CXXII -g GERADOR [-f] [-t] [-d DESTINO] [-e EXTENSAO] -a ARQUIVOS')
+        print('Uso: cxxii -g GERADOR [-f] [-t] [-d DESTINO] [-e EXTENSAO] -a ARQUIVOS')
         print('Argumentos:')
         print('  -g   URL ou endereço local do gerador a utilizar: .py ou .zip')
         print('       Nome sem extensão = ' + CXXII_Repositorio + 'Nome.zip')

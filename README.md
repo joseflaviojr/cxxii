@@ -1,55 +1,84 @@
 # CXXII
 
-Gerador de arquivos a partir de XML
+Gerador de arquivos a partir de XML.
 
-File generator based on XML
+File generator based on XML.
 
-    "Não vos conformeis com este mundo,
-    mas transformai-vos pela renovação do vosso espírito,
-    para que possais discernir qual é a vontade de Deus,
-    o que é bom, o que lhe agrada e o que é perfeito."
-    (Bíblia Sagrada, Romanos 12:2)
+## Versão Atual / Current Version
 
-    "Do not conform yourselves to this age
-    but be transformed by the renewal of your mind,
-    that you may discern what is the will of God,
-    what is good and pleasing and perfect."
-    (Holy Bible, Romans 12:2)
+1.0-A1
 
-## Exemplo.xml (Example)
+Padrão de versionamento: [JFV](http://joseflavio.com/jfv)
 
-    <pessoas>
-        <pessoa>
-            <nome>Maria</nome>
-            <endereco>Rua M</endereco>
-        </pessoa>
-        <pessoa>
-            <nome>José</nome>
-            <endereco>Rua J</endereco>
-        </pessoa>
-    </pessoas>
+## Exemplo / Example
 
-## ./CXXII.sh -g Exemplo1 -d teste -a Exemplo.xml
+Considerando o arquivo de entrada [Exemplo.xml](https://github.com/joseflaviojr/cxxii/blob/master/Exemplo.xml) e o gerador [Exemplo1](https://github.com/joseflaviojr/cxxii/blob/master/Exemplo1.py).
 
-    <html>
-        <head>
-            <title>Exemplo 1</title>
-            <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-        </head>
-        <body>
-            <h1><b>Pessoas</b></h1>
-            <p><b>Nome:</b> Maria</p>
-            <p><b>Endereço:</b> Rua M</p>
-            <hr>
-            <p><b>Nome:</b> José</p>
-            <p><b>Endereço:</b> Rua J</p>
-            <hr>
-        </body>
-    </html>
+Considering the input file [Exemplo.xml](https://github.com/joseflaviojr/cxxii/blob/master/Exemplo.xml) and the generator [Exemplo1](https://github.com/joseflaviojr/cxxii/blob/master/Exemplo1.py).
 
-## python3 CXXII.py
+``` xml
+<pessoas>
+    <pessoa>
+        <nome>Maria</nome>
+        <endereco>Rua M</endereco>
+    </pessoa>
+    <pessoa>
+        <nome>José</nome>
+        <endereco>Rua J</endereco>
+    </pessoa>
+</pessoas>
+```
 
-    Uso: CXXII -g GERADOR [-f] [-t] [-d DESTINO] [-e EXTENSAO] -a ARQUIVOS
+Executar `cxxii -g Exemplo1 -d teste -a Exemplo.xml`, obtendo:
+
+Run `cxxii -g Exemplo1 -d teste -a Exemplo.xml`, obtaining:
+
+``` html
+<html>
+    <head>
+        <title>Exemplo 1</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    </head>
+    <body>
+        <h1><b>Pessoas</b></h1>
+        <p><b>Nome:</b> Maria</p>
+        <p><b>Endereço:</b> Rua M</p>
+        <hr>
+        <p><b>Nome:</b> José</p>
+        <p><b>Endereço:</b> Rua J</p>
+        <hr>
+    </body>
+</html>
+```
+
+## Requisitos / Requirements
+
+- Python 3
+
+## Instalação / Installation
+
+Execute as seguintes instruções no terminal de comandos do Linux ou macOS.
+
+Run the following instructions on the Linux or macOS command terminal.
+
+``` bash
+sudo wget https://github.com/joseflaviojr/cxxii/archive/1.0-A1.zip -O /usr/local/CXXII.zip
+sudo unzip /usr/local/CXXII.zip -d /usr/local/
+sudo rm -f /usr/local/CXXII.zip
+sudo chmod 755 /usr/local/cxxii-1.0-A1/CXXII.py
+sudo ln -s /usr/local/cxxii-1.0-A1/CXXII.py /usr/local/bin/cxxii
+```
+
+## Desinstalação / Uninstall
+
+``` bash
+sudo rm -f /usr/local/bin/cxxii
+sudo rm -rf /usr/local/cxxii-1.0-A1
+```
+
+## Modo de Uso / Mode of Use
+
+    Uso: cxxii -g GERADOR [-f] [-t] [-d DESTINO] [-e EXTENSAO] -a ARQUIVOS
     Argumentos:
       -g   URL ou endereço local do gerador a utilizar: .py ou .zip
            Nome sem extensão = http://www.joseflavio.com/cxxii/Nome.zip
